@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setSupportZoom(true);
         //与js交互必须设置
         webSettings.setJavaScriptEnabled(true);
-        webview.loadUrl("https://www.baidu.com/");
+        webview.loadUrl("file:///android_asset/html.html");
+        // webview.loadUrl("https://www.baidu.com/");
         webview.addJavascriptInterface(MainActivity.this,"android");
     }
 
